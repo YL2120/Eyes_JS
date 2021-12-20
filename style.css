@@ -1,0 +1,47 @@
+*, ::before, ::after {
+    box-shadow: border-box;
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, orange, pink);
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    min-height: 900px;
+    height: 100vh;
+}
+
+.eyes{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    background : #000;
+}
+
+.eye{
+    width: 240px;
+    height: 120px;
+    border-radius: 50%;
+    background : #fff;
+    margin : 40px;
+    position : relative;
+    overflow: hidden; /* cache le dépassement de l'oeil de la pupille */
+}
+
+.ball{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: absolute;
+    top: 50%; /* centrage initial des yeux */
+    left: 50%; /* centrage initial des yeux */
+    transform: translate(-50%, -50%); /* centrage initial des yeux */
+    border-radius: 50%;
+}
